@@ -1,0 +1,49 @@
+<div class="section" id="about">
+    <div class="container">
+      <div class="card" data-aos="fade-up" data-aos-offset="10">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="card-body">
+              <div class="h4 mt-0 title">{{ data.aboutTitle }}</div>
+              <p *ngFor="let l of data.aboutDescriptionLines"> {{ l }}</p> 
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card-body">
+              <div class="h4 mt-0 title">{{ data.basicInformationTitle }}</div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <strong class="text-uppercase">{{ data.dateOfBirthTitle }}</strong>
+                </div>
+                <div class="col-sm-8">{{ data.dateOfBirthValue }}</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4">
+                  <strong class="text-uppercase">{{ data.emailTitle }}</strong>
+                </div>
+                <div class="col-sm-8">{{ data.emailValue }}</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4">
+                  <strong class="text-uppercase">{{ data.phoneTitle }}</strong>
+                </div>
+                <div class="col-sm-8">{{ data.phoneValue }}</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4">
+                  <strong class="text-uppercase">{{ data.addressTitle }}</strong>
+                </div>
+                <div class="col-sm-8">{{ data.addressValue }}</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4">
+                  <strong class="text-uppercase">{{ data.languageTitle }}</strong>
+                </div>
+                <div class="col-sm-8">{{ data.languageValue }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
