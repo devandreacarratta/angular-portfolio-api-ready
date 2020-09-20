@@ -1,0 +1,12 @@
+<footer class="footer">
+    <div class="container text-center">
+
+      <a class="btn btn-default btn-round btn-lg btn-icon" href="{{s.profileUrl}}" target="_blank" rel="tooltip" title="{{s.followMeText}}"  *ngFor="let s of dataIntro.socials">
+        <i class="fa fa-{{s.socialId}} fa-2x"></i>
+      </a>
+      
+    </div>
+    <div class="text-center text-muted">
+      <p>{{dataFooter.copyrighttext}}</p>
+    </div>
+  </footer>

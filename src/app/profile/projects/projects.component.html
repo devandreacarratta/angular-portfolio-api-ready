@@ -1,0 +1,25 @@
+<div class="section" id="projects">
+    <div class="container cc-education">
+        <div class="h4 text-center mb-4 title">Projects</div>
+            
+     <div class="row">
+    
+    
+<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft"  *ngFor="let d of data.items">
+  <div class="blog-entry">
+    <div class="card" >
+    <div class="card-body">
+      <h4 class="card-title">{{d.title}}</h4>
+      <h5 class="card-text">{{d.text}}</h5>
+      <h5 class="card-text" *ngFor="let l of d.links"><a href="{{l.url}}">{{l.title}}</a></h5>
+    </div>
+  </div>
+  </div>
+</div>
+    
+    
+    
+    
+    </div>
+    </div>
+  </div>

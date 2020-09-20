@@ -1,0 +1,55 @@
+<div class="section" id="skill">
+        <div class="container">
+          <div class="h4 text-center mb-4 title">Skills</div>
+          <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body">
+              <!-- First Line -->
+              <div class="row">
+                <div class="col-md-6" *ngFor="let l of data.firstline">
+                  <div class="progress-container progress-primary">
+                    <span class="progress-badge">{{l.title}}</span>
+                    <div class="progress">
+                      <span class="progress-value">{{l.percentage}}%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Second Line -->
+              <div class="row">
+              <div class="col-md-6" *ngFor="let l of data.secondline">
+                <div class="progress-container progress-primary">
+                  <span class="progress-badge">{{l.title}}</span>
+                  <div class="progress">
+                    <span class="progress-value">{{l.percentage}}%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                         <!-- Third Line -->
+                         <div class="row">
+                          <div class="col-md-4" *ngFor="let l of data.thirdline">
+                            <div class="progress-container progress-primary">
+                              <span class="progress-badge">{{l.title}}</span>
+                              <div class="progress">
+                                <span class="progress-value">{{l.percentage}}%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- fourth Line -->
+                        <div class="row">
+                          <div class="col-md-4" *ngFor="let l of data.fourthline">
+                            <div class="progress-container progress-primary">
+                              <span class="progress-badge">{{l.title}}</span>
+                              <div class="progress">
+                                <span class="progress-value">{{l.percentage}}%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
